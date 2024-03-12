@@ -5,12 +5,13 @@ import Details from "../screens/Details";
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = ({ route }) => {
+  const { category } = route.params;
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen
         name="Category"
         component={Category}
-        initialParams={{ category: route.params.category }}
+        initialParams={{ category }}
       />
       <Stack.Screen name="Detail" component={Details} />
     </Stack.Navigator>

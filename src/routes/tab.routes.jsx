@@ -1,4 +1,5 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+
 import StackNavigator from "./stack.routes";
 import Profile from "../screens/Profile";
 import { categories } from "../data/categories";
