@@ -1,12 +1,5 @@
-import { NavigationContainer } from "@react-navigation/native";
-import TabNavigator from "./src/routes/tab.routes";
+import Routes from "./src/routes";
 
-function App() {
-  return (
-    <NavigationContainer>
-      <TabNavigator />
-    </NavigationContainer>
-  );
+export default function App() {
+  return <Routes />;
 }
-
-export default App;
